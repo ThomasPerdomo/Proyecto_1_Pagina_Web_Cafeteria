@@ -7,6 +7,25 @@
     </head>
     
     <body>
-        <h1>...</h1>
+        <div class="sedes">
+            {% for sedes in datos.sedes %}
+                <div id = "{{sedes.id}}"">
+                <h1>{{sedes.nombre}}</h1>
+                <h2>{{sedes.ciudad}} {{sedes.departamento}}</h2>
+                <h2>{{sedes.direccion}}</h2>
+                <h2>{{sedes.horarios}}</h2>
+                </div>
+            {% endfor %}
+        </div>
+
+        <a href="/menu" class="boton_menu">Ir al menu</a>
+        <a href="/" class="boton_inicio">Volver al inicio</a>
+
+        <div class="logo">
+            <h1>{{datos.negocio.nombre}}</h1>  
+            <p>{{datos.negocio.slogan}}</p>
+        </div>
+
+        <p id = valores>{{datos.negocio.valores}}</p> 
     </body>
 </html>

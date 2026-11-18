@@ -43,12 +43,11 @@
   },
   "sedes": [
     {
-      "id": "sede-001",
+      "id": "sede_1",
       "nombre": "Granos del Sol - Chapinero",
       "ciudad": "Bogotá",
       "departamento": "Bogotá D.C.",
       "direccion": "Carrera 13 # 63-28, Chapinero",
-      "coordenadas": { "latitud": 4.6486, "longitud": -74.0628 },
       "telefono": "+57 601 555 0143",
       "horario": {
         "lunes_a_viernes": "6:30 AM - 9:00 PM",
@@ -60,12 +59,11 @@
       "es_sede_principal": true
     },
     {
-      "id": "sede-002",
+      "id": "sede_2",
       "nombre": "Granos del Sol - El Poblado",
       "ciudad": "Medellín",
       "departamento": "Antioquia",
       "direccion": "Calle 10 # 36-15, El Poblado",
-      "coordenadas": { "latitud": 6.2086, "longitud": -75.5659 },
       "telefono": "+57 604 555 0177",
       "horario": {
         "lunes_a_viernes": "7:00 AM - 9:30 PM",
@@ -77,12 +75,11 @@
       "es_sede_principal": false
     },
     {
-      "id": "sede-003",
+      "id": "sede_3",
       "nombre": "Granos del Sol - Centro Histórico",
       "ciudad": "Cartagena",
       "departamento": "Bolívar",
       "direccion": "Calle de la Estrella # 4-22, Centro Amurallado",
-      "coordenadas": { "latitud": 10.4236, "longitud": -75.5515 },
       "telefono": "+57 605 555 0188",
       "horario": {
         "lunes_a_domingo": "8:00 AM - 10:00 PM"
@@ -92,12 +89,11 @@
       "es_sede_principal": false
     },
     {
-      "id": "sede-004",
+      "id": "sede_4",
       "nombre": "Granos del Sol - Ibagué Centro",
       "ciudad": "Ibagué",
       "departamento": "Tolima",
       "direccion": "Carrera 3 # 11-40, Centro",
-      "coordenadas": { "latitud": 4.4389, "longitud": -75.2322 },
       "telefono": "+57 608 555 0166",
       "horario": {
         "lunes_a_sabado": "6:30 AM - 8:30 PM",
