@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ datos.negocio.nombre }}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='menu.css') }}">
+    </head>
+
+    <body>
+        <div class="menu_categorias">
+            {% for categoria in datos.menu.categorias %}
+                <div id="{{ categoria.id }}" class="cuadro_categoria"> {{ categoria.nombre }}</div>
+            {% endfor %}
+        </div>
+
+        <img id = calientes src="/static/images/capuchino.png" alt="Imagen productos calientes">
+        <img id = frios src="/static/images/frappe.png" alt="Imagen productos frios">
+        <img id = panes src="/static/images/brownie.png" alt="Imagen panaderia y reposteria">
+        <img id = comida src="/static/images/calentado.png" alt="Imagen comidas">
+        <img id = cafe_grano src="/static/images/bolsa_cafe.png" alt="Imagen granos de cafe">
+
+        <a href="/" class="boton_inicio">Volver al inicio</a>
+        <a href="/menu/calientes" class="boton_calientes">Ver</a>
+        <a href="/menu/frios" class="boton_frios">Ver</a>
+        <a href="/menu/panes" class="boton_panes">Ver</a>
+        <a href="/menu/comida" class="boton_comida">Ver</a>
+        <a href="/menu/cafe_grano" class="boton_cafe_grano">Ver</a>
+
+        <div class="logo">
+            <h1>{{datos.negocio.nombre}}</h1>  
+            <p>{{datos.negocio.slogan}}</p>
+        </div>
+
+        <p id = valores>{{datos.negocio.valores}}</p>    
+
+
+    </body>
+
+</html>

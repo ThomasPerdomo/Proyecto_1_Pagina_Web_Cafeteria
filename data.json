@@ -1,0 +1,283 @@
+{
+  "negocio": {
+    "nombre": "Granos del Sol Café",
+    "slogan": "El sabor de nuestra tierra en cada taza",
+    "razon_social": "Granos del Sol S.A.S.",
+    "nit": "901.234.567-8",
+    "fecha_fundacion": "2016-03-14",
+    "descripcion": "Cafetería colombiana de especialidad que trabaja directamente con caficultores del Tolima, Huila y Nariño. Ofrecemos café de origen, panadería artesanal y comida casera en un ambiente cálido y familiar.",
+    "tipo_negocio": "Cafetería y panadería",
+    "moneda": "COP",
+    "numero_empleados": 42,
+    "valores": [
+      "Comercio justo con caficultores",
+      "Calidad en cada taza",
+      "Sostenibilidad",
+      "Calidez colombiana"
+    ],
+    "certificaciones": [
+      "Rainforest Alliance",
+      "Sello de Café de Colombia"
+    ]
+  },
+  "contacto": {
+    "telefono_principal": "+57 601 555 0142",
+    "whatsapp": "+57 300 555 0199",
+    "correo_general": "hola@granosdelsol.example.co",
+    "correo_pedidos": "pedidos@granosdelsol.example.co",
+    "correo_empleo": "talento@granosdelsol.example.co",
+    "sitio_web": "https://www.granosdelsol.example.co",
+    "redes_sociales": {
+      "instagram": "@granosdelsolcafe",
+      "facebook": "facebook.com/granosdelsolcafe",
+      "tiktok": "@granosdelsolcafe",
+      "x": "@granosdelsol"
+    },
+    "domicilios": {
+      "disponible": true,
+      "plataformas": ["Rappi", "iFood", "Domicilios.com"],
+      "pedidos_directos_whatsapp": true,
+      "costo_domicilio_desde": 4500,
+      "pedido_minimo": 15000
+    }
+  },
+  "sedes": [
+    {
+      "id": "sede-001",
+      "nombre": "Granos del Sol - Chapinero",
+      "ciudad": "Bogotá",
+      "departamento": "Bogotá D.C.",
+      "direccion": "Carrera 13 # 63-28, Chapinero",
+      "coordenadas": { "latitud": 4.6486, "longitud": -74.0628 },
+      "telefono": "+57 601 555 0143",
+      "horario": {
+        "lunes_a_viernes": "6:30 AM - 9:00 PM",
+        "sabado": "7:00 AM - 10:00 PM",
+        "domingo_y_festivos": "8:00 AM - 8:00 PM"
+      },
+      "servicios": ["Wi-Fi gratis", "Terraza", "Domicilios", "Eventos privados"],
+      "capacidad_personas": 60,
+      "es_sede_principal": true
+    },
+    {
+      "id": "sede-002",
+      "nombre": "Granos del Sol - El Poblado",
+      "ciudad": "Medellín",
+      "departamento": "Antioquia",
+      "direccion": "Calle 10 # 36-15, El Poblado",
+      "coordenadas": { "latitud": 6.2086, "longitud": -75.5659 },
+      "telefono": "+57 604 555 0177",
+      "horario": {
+        "lunes_a_viernes": "7:00 AM - 9:30 PM",
+        "sabado": "7:00 AM - 10:30 PM",
+        "domingo_y_festivos": "8:00 AM - 9:00 PM"
+      },
+      "servicios": ["Wi-Fi gratis", "Zona de coworking", "Domicilios", "Catas de café"],
+      "capacidad_personas": 45,
+      "es_sede_principal": false
+    },
+    {
+      "id": "sede-003",
+      "nombre": "Granos del Sol - Centro Histórico",
+      "ciudad": "Cartagena",
+      "departamento": "Bolívar",
+      "direccion": "Calle de la Estrella # 4-22, Centro Amurallado",
+      "coordenadas": { "latitud": 10.4236, "longitud": -75.5515 },
+      "telefono": "+57 605 555 0188",
+      "horario": {
+        "lunes_a_domingo": "8:00 AM - 10:00 PM"
+      },
+      "servicios": ["Aire acondicionado", "Patio interior", "Tienda de café en grano"],
+      "capacidad_personas": 35,
+      "es_sede_principal": false
+    },
+    {
+      "id": "sede-004",
+      "nombre": "Granos del Sol - Ibagué Centro",
+      "ciudad": "Ibagué",
+      "departamento": "Tolima",
+      "direccion": "Carrera 3 # 11-40, Centro",
+      "coordenadas": { "latitud": 4.4389, "longitud": -75.2322 },
+      "telefono": "+57 608 555 0166",
+      "horario": {
+        "lunes_a_sabado": "6:30 AM - 8:30 PM",
+        "domingo_y_festivos": "8:00 AM - 6:00 PM"
+      },
+      "servicios": ["Wi-Fi gratis", "Domicilios", "Tour del café (con reserva)"],
+      "capacidad_personas": 40,
+      "es_sede_principal": false
+    }
+  ],
+  "menu": {
+    "ultima_actualizacion": "2026-11-01",
+    "categorias": [
+      {
+        "id": "cat_calientes",
+        "nombre": "productos calientes",
+        "productos_cal": [
+          {
+            "id": "p_01",
+            "nombre": "Tinto tradicional",
+            "descripcion": "Café colombiano filtrado, suave y aromático.",
+            "precio": 3500,
+            "tamanos": [
+              { "nombre": "Pequeño (8 oz)", "precio": 3500 },
+              { "nombre": "Grande (12 oz)", "precio": 4500 }
+            ],
+            "vegano": true,
+            "disponible": true
+          },
+          {
+            "id": "p_02",
+            "nombre": "Capuchino",
+            "descripcion": "Espresso, leche vaporizada y espuma cremosa.",
+            "precio": 7500,
+            "vegano": false,
+            "disponible": true,
+            "opciones_leche": ["Entera", "Deslactosada", "Almendras", "Avena"]
+          },
+          {
+            "id": "p_03",
+            "nombre": "Latte de panela y canela",
+            "descripcion": "Nuestra bebida insignia: espresso, leche y panela con toque de canela.",
+            "precio": 9000,
+            "vegano": false,
+            "disponible": true,
+            "destacado": true
+          },
+          {
+            "id": "p_04",
+            "nombre": "Chocolate caliente",
+            "descripcion": "Chocolate espeso colombiano servido con queso campesino.",
+            "precio": 9500,
+            "vegano": false,
+            "disponible": true
+          }
+        ]
+    },
+    {
+        "id": "cat_frios",
+        "nombre": "Bebidas frías",
+        "productos_frios": [
+          {
+            "id": "p_05",
+            "nombre": "Frappé de arequipe",
+            "descripcion": "Café frappé con arequipe artesanal y crema batida.",
+            "precio": 12000,
+            "vegano": false,
+            "disponible": true
+          },
+          {
+            "id": "p_06",
+            "nombre": "Limonada natural",
+            "descripcion": "Limonada refrescante saludable baja en azucar.",
+            "precio": 9500,
+            "vegano": true,
+            "disponible": true
+          },
+          {
+            "id": "p_07",
+            "nombre": "Jugo natural de naranja",
+            "descripcion": "Preparado en agua o en leche.",
+            "precio": 7500,
+            "vegano": true,
+            "disponible": true
+          }
+        ]
+      },
+      {
+        "id": "cat_panaderia",
+        "nombre": "Panadería y repostería",
+        "productos_panes": [
+          {
+            "id": "p_08",
+            "nombre": "Pandebono",
+            "descripcion": "Recién horneado, con queso y almidón de yuca.",
+            "precio": 3000,
+            "vegano": false,
+            "disponible": true
+          },
+          {
+            "id": "p_09",
+            "nombre": "Croissant de bocadillo y queso",
+            "descripcion": "Hojaldrado relleno de bocadillo veleño y queso.",
+            "precio": 7000,
+            "vegano": false,
+            "disponible": true
+          },
+          {
+            "id": "p_10",
+            "nombre": "Brownie de cacao colombiano",
+            "descripcion": "Con cacao del Huila y nueces.",
+            "precio": 8500,
+            "vegano": false,
+            "contiene_alergenos": ["Gluten", "Nueces", "Huevo", "Lácteos"],
+            "disponible": true
+          }
+        ]
+      },
+      {
+        "id": "cat_comida",
+        "nombre": "Desayunos y comidas",
+        "productos_comida": [
+          {
+            "id": "p_11",
+            "nombre": "Desayuno calentado paisa",
+            "descripcion": "Calentado de frijoles con arroz, huevo, arepa.",
+            "precio": 18500
+          },
+          {
+            "id": "p_12",
+            "nombre": "Huevos pericos con arepa",
+            "descripcion": "Huevos revueltos con tomate y cebolla, arepa de choclo y bebida caliente.",
+            "precio": 14500
+          },
+          {
+            "id": "p_13",
+            "nombre": "Sándwich de jamon y queso",
+            "descripcion": "Pan artesanal con queso mozzarella.",
+            "precio": 16500
+          },
+          {
+            "id": "p_14",
+            "nombre": "Arepa rellena de queso",
+            "descripcion": "Arepa de maíz pelado con queso mozzarella.",
+            "precio": 13500
+          }
+        ]
+      },
+      {
+        "id": "cat_cafe_grano",
+        "nombre": "Café en grano (para llevar)",
+        "productos_cafe_grano": [
+          {
+            "id": "p_15",
+            "nombre": "Café Tolima - Tostión media (250 g)",
+            "descripcion": "Notas a panela, chocolate y nuez.",
+            "precio": 28000,
+            "origen": "Planadas, Tolima",
+            "disponible": true
+          },
+          {
+            "id": "p_16",
+            "nombre": "Café Huila - Tostión clara (250 g)",
+            "descripcion": "Notas florales y frutos rojos.",
+            "precio": 32000,
+            "origen": "Pitalito, Huila",
+            "disponible": true
+          }
+        ]
+      }
+    ]
+  },
+  "metodos_de_pago": ["Efectivo", "Tarjeta débito", "Tarjeta crédito", "Nequi", "Daviplata", "Bre-B", "Transferencia bancaria"],
+  "impuestos": {
+    "iva_incluido_en_precios": true,
+    "impoconsumo_porcentaje": 8
+  },
+  "politicas": {
+    "mascotas": "Pet friendly solo en terrazas y patios",
+    "reservas": "Disponible para grupos de 6 o más personas",
+    "propinas": "Voluntaria, sugerida del 10%"
+  }
+}

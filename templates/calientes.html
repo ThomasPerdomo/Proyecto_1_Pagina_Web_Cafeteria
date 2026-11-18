@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ datos.negocio.nombre }}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='calientes.css') }}">
+    </head>
+
+    <body>
+        <div class="menu_calientes">
+            {% for producto in datos.menu.categorias[0].productos_cal %}
+                <div id="{{ producto.id }}">
+                    <h3>{{ producto.nombre }}</h3>
+                    <p>{{ producto.descripcion }}</p>
+                    <p>${{ producto.precio }}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+        <img id="tinto" src="/static/images/tinto.png" alt="Tinto tradicional">
+        <img id="capuchino" src="/static/images/capuchino.png" alt="Capuchino">
+        <img id="latte" src="/static/images/latte.png" alt="Latte">
+        <img id="chocolate" src="/static/images/chocolate.png" alt="Chocolate">
+
+        <a href="/menu" class="boton_menu">Volver al menu</a>
+        <a href="/" class="boton_inicio">Volver al inicio</a>
+
+        <div class="logo">
+            <h1>{{datos.negocio.nombre}}</h1>  
+            <p>{{datos.negocio.slogan}}</p>
+        </div>
+
+        <p id = valores>{{datos.negocio.valores}}</p> 
+        
+    </body>
+
+</html>

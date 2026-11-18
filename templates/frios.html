@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ datos.negocio.nombre }}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='frios.css') }}">
+    </head>
+
+    <body>
+        <div class="menu_frios">
+            {% for producto in datos.menu.categorias[1].productos_frios %}
+                <div id="{{ producto.id }}">
+                    <h3>{{ producto.nombre }}</h3>
+                    <p>{{ producto.descripcion }}</p>
+                    <p>${{ producto.precio }}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+        <img id="frappe" src="/static/images/frappe.png" alt="Frappe">
+        <img id="limonada" src="/static/images/limonada.png" alt="Limonada">
+        <img id="jugo" src="/static/images/naranja.png" alt="Jugo">
+
+        <a href="/menu" class="boton_menu">Volver al menu</a>
+        <a href="/" class="boton_inicio">Volver al inicio</a>
+
+        <div class="logo">
+            <h1>{{datos.negocio.nombre}}</h1>  
+            <p>{{datos.negocio.slogan}}</p>
+        </div>
+
+        <p id = valores>{{datos.negocio.valores}}</p> 
+        
+    </body>
+
+</html>

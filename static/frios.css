@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(65, 33, 33);
+    color: white;
+}
+
+.menu_frios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
+    gap: 0px;
+    top: 45%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+#frappe{
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 27%;
+    left: 17%;
+    object-fit: cover;
+    transform: translate(-50%,-50%);
+}
+
+#limonada{
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover
+}
+
+#jugo{
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 27%;
+    left: 83%;
+    transform: translate(-50%,-50%);
+    object-fit: cover
+}
+
+
+.boton_menu{
+    display: inline-block;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 12px 12px;
+    border-radius: 8px;
+    border: 2px solid white;
+    position: absolute;
+    left: 46.5%;
+    top: 85%;
+    transform: translate(-50%,-50%);
+}
+
+.boton_inicio{
+    display: flex;
+    color: black;
+    background-color: white;
+    text-decoration: none;   
+    border: 2px solid white;
+    border-radius: 8px; 
+    padding: 12px 12px; 
+    position: absolute;
+    top: 85%;
+    left: 58%;
+    transform: translate(-50%,-50%);
+}
+
+.logo{
+    color: white;
+    border: white solid 3px;
+    text-align: center;
+    width: 500px;
+    height: 110px;
+    display: block;
+    position: absolute;
+    margin-top: 450px;
+}
+
+#valores{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    margin-left: 41%;
+}

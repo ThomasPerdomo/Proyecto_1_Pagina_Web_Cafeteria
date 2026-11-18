@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ datos.negocio.nombre }}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='cafe_grano.css') }}">
+    </head>
+
+    <body>
+        <div class="menu_cafe_grano">
+            {% for producto in datos.menu.categorias[4].productos_cafe_grano %}
+                <div id="{{ producto.id }}">
+                    <h3>{{ producto.nombre }}</h3>
+                    <p>{{ producto.descripcion }}</p>
+                    <p>${{ producto.precio }}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+        <img id="bolsa1" src="/static/images/bolsa_cafe.png" alt="Bolsa cafe 1">
+        <img id="bolsa2" src="/static/images/bolsa_cafe.png" alt="Bolsa cafe 2">
+
+        <a href="/menu" class="boton_menu">Volver al menu</a>
+        <a href="/" class="boton_inicio">Volver al inicio</a>
+
+        <div class="logo">
+            <h1>{{datos.negocio.nombre}}</h1>  
+            <p>{{datos.negocio.slogan}}</p>
+        </div>
+
+        <p id = valores>{{datos.negocio.valores}}</p> 
+        
+    </body>
+
+</html>
